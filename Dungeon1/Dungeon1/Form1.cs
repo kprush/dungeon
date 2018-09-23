@@ -32,40 +32,40 @@ namespace Dungeon1
             switch (page)
             {
                 case 4:
-                    label1.Text += "\nYep, it's still locked.";
+                    textBox1.Text += "\nYep, it's still locked.";
                     break;
                 case 4.2:
-                    label1.Text += "\nYep, it's still locked.";
+                    textBox1.Text += "\nYep, it's still locked.";
 
                     break;
                 case 4.3:
-                    label1.Text += "\nYep, it's still locked.";
+                    textBox1.Text += "\nYep, it's still locked.";
 
                     break;
                 case 4.4:
-                    label1.Text += "\nYep, it's still locked.";
+                    textBox1.Text += "\nYep, it's still locked.";
 
                     break;
                 case 4.1:
                     chanse = rnd();
-                    if ((item1 == 4) || (item2 == 4) || (item3 == 4)) { chanse += 2; label1.Text += "\nYou move faster in your boots"; }
+                    if ((item1 == 4) || (item2 == 4) || (item3 == 4)) { chanse += 2;}
                     if (chanse > 3)
                     {
-                        label1.Text += "\nYou managed to dodge vampire's attack.";
+                        textBox1.Text += "\nYou have successfully dodged vampire's attack.";
                         enemyfocus = false;
                     }
                     else
                     {
-                        label1.Text += "\nYou didn't manage to dodge vampire's attack.";
+                        textBox1.Text += "\nUnfortunately you failed dodging vampire's attack.";
                         damage = rnd();
                         damage += 3;
                         if ((item1 == 3) || (item2 == 3) || (item3 == 3))
                         {
-                            label1.Text += "\nWith your armor you reduce part of the damage";
+                            textBox1.Text += "\nYour armor reduces part of the damage";
                             damage -= 2;
                         }
                         if (damage < 0) damage = 0;
-                        label1.Text += "\nYou lost " + damage + " health";
+                        textBox1.Text += "\nYou lost " + damage + " health points";
                         health -= damage;
                         if (health < 0) health = 0;
                         takedamage();
@@ -77,24 +77,24 @@ namespace Dungeon1
                 case 3.1:
 
                     chanse = rnd();
-                    if ((item1 == 4) || (item2 == 4)) { chanse += 2; label1.Text += "\nYou move faster in your boots"; }
+                    if ((item1 == 4) || (item2 == 4)) { chanse += 2;}
                     if (chanse > 3)
                     {
-                        label1.Text += "\nYou managed to dodge vampire's attack.";
+                        textBox1.Text += "\nYou have successfully dodged vampire's attack.";
                         enemyfocus = false;
                     }
                     else
                     {
-                        label1.Text += "\nYou didn't manage to dodge vampire's attack.";
+                        textBox1.Text += "\nUnfortunately you failed dodging vampire's attack.";
                         damage = rnd();
                         damage += 2;
                         if ((item1 == 3) || (item1 == 4))
                         {
-                            label1.Text += "\nWith your armor you reduce part of the damage";
+                            textBox1.Text += "\nYour armor reduces part of the damage";
                             damage -= 2;
                         }
                         if (damage < 0) damage = 0;
-                        label1.Text += "\nYou lost " + damage + " health";
+                        textBox1.Text += "\nYou lost " + damage + " health points";
                         health -= damage;
                         if (health < 0) health = 0;
                         takedamage();
@@ -106,31 +106,31 @@ namespace Dungeon1
                 case 1.1: lose(); break;
                 case 2:
                     page = 1.1;
-                    label1.Text = "There is a door and a chest in the corner.\nWhat are you going to do? ";
+                    textBox1.Text = "There is a door and a chest at the corner.\nWhat are you going to do? ";
                     button1.Text = "Enter the door.";
                     button2.Text = "Look inside the chest.";
-                    button3.Text = "I like it here, i wont go anywhere.";
+                    button3.Text = "I like it here. I'm staing";
                     break;
                 case 2.1:
                     chanse = rnd();
-                    if (item1 == 4) { chanse += 2; label1.Text += "\nYou mmove faster in your boots"; }
+                    if (item1 == 4) { chanse += 2;}
                     if (chanse > 3)
                     {
-                        label1.Text += "\nYou managed to dodge goblin's attack.";
+                        textBox1.Text += "\nYou have successfully dodged goblin's attack.";
                         enemyfocus = false;
                     }
                     else
                     {
-                        label1.Text += "\nYou didn't manage to dodge goblin's attack.";
+                        textBox1.Text += "\nUnfortunately you failed dodging goblin's attack.";
                         damage = rnd();
                         damage += 1;
                         if (item1 == 3)
                         {
-                            label1.Text += "\nWith your armor you reduce part of the damage";
+                            textBox1.Text += "\nYour armor reduces part of the damage";
                             damage -= 2;
                         }
                         if (damage < 0) damage = 0;
-                        label1.Text += "\nYou lost " + damage + " health";
+                        textBox1.Text += "\nYou lost " + damage + " health points";
                         health -= damage;
                         if (health < 0) health = 0;
                         takedamage();
@@ -139,19 +139,19 @@ namespace Dungeon1
                     }
                     break;
                 case 2.2:
-                    label1.Text += "\nSomebody closed the door. You can't get back.";
+                    textBox1.Text += "\nSomebody closed the door. You can't get back.";
                     break;
                 case 2.3:
-                    label1.Text += "\nSomebody closed the door. You can't get back.";
+                    textBox1.Text += "\nSomebody closed the door. You can't get back.";
                     break;
                 case 3:
-                    label1.Text += "\nThat's strange. Door is already locked.";
+                    textBox1.Text += "\nThat's strange. Door is already locked.";
                     break;
                 case 3.2:
-                    label1.Text += "\nDoor is still closed.";
+                    textBox1.Text += "\nDoor is still closed.";
                     break;
                 case 3.3:
-                    label1.Text += "\nDoor is still closed.";
+                    textBox1.Text += "\nDoor is still closed.";
                     break;
 
             }
@@ -164,15 +164,15 @@ namespace Dungeon1
             {
                 case 3.2:
                     page = 4;
-                    label1.Text = "You are in a huge room with a huge dragon in it, lying between you and a tiny door.\nWhat are you going to do?";
+                    textBox1.Text = "                                                              \nYou enter a huge room with a large dragon chilln' in it.You can see a small door behind him.\nWhat are you going to do?";
                     button1.Text = "Attack mighty dragon.";
                     button2.Text = "Ask if you can pass him and go into the door he standing infront of;";
-                    button3.Text = "Check if the door you just entered.";
+                    button3.Text = "Check if the door you just entered is closed.";
                     enemyhealth = 10;
                     break;
                 case 3.3:
                     page = 4;
-                    label1.Text = "You are in a huge room with a huge dragon in it, lying between you and a tiny door.\nWhat are you going to do?";
+                    textBox1.Text = "                                                              \nYou enter a huge room with a large dragon chilln' in it.You can see a small door behind him.\nWhat are you going to do?";
                     button1.Text = "Attack mighty dragon.";
                     button2.Text = "Ask if you can pass him and go into the door he standing infront of;";
                     button3.Text = "Check if the door you just entered is closed.";
@@ -180,20 +180,20 @@ namespace Dungeon1
                     break;
                 case 4.1:
                     damage = rnd();
-                    label1.Text += "\nYou attack dragon";
+                    textBox1.Text += "\nYou attack dragon";
                     if (item1 == 1 || (item2 == 1) || (item3 == 1))
                     {
                         damage += 2;
-                        label1.Text += " with your sword";
+                        textBox1.Text += " with your sword";
                     }
                     else
                     {
-                        label1.Text += " with your hand";
+                        textBox1.Text += " with your hand";
                     }
                     if (enemyfocus == true)
                     {
-                        label1.Text += ", but he is ready for your hit.";
-                        label1.Text += "\nHe blocks it and strikes back.";
+                        textBox1.Text += ", but he is ready for your hit.";
+                        textBox1.Text += "\nHe blocks it and strikes back.";
                         damage -= 3;
                         if (damage < 0) { damage = 0; }
                         enemyhealth -= damage;
@@ -203,17 +203,17 @@ namespace Dungeon1
                         damage += 2;
                         if ((item1 == 3) || (item2 == 3) || (item3 == 3))
                         {
-                            label1.Text += "\nWith your armor you reduce part of the damage.";
+                            textBox1.Text += "\nYour armor reduces part of the damage.";
                             damage -= 2;
                         }
-                        label1.Text += "\nYou lost " + damage + " health";
+                        textBox1.Text += "\nYou lost " + damage + " health points";
                         health -= damage;
                         if (health < 0) { health = 0; }
                         takedamage();
                         if (enemyhealth == 0)
                         {
                             page = 4.2;
-                            label1.Text = "You won!\nNothing stands between you and the chest or the door now.\n What are you going to do?";
+                            textBox1.Text = "                                                              \nYou killed the dragon. Now the path is clear.\nWhat are you going to do?";
                             button1.Text = "Enter the tiny door.";
                             button2.Text = "Search dragon's body.";
                             button3.Text = "Check if the door you entered is closed.";
@@ -224,12 +224,12 @@ namespace Dungeon1
                     {
                         enemyhealth -= damage;
                         if (enemyhealth < 0) enemyhealth = 0;
-                        label1.Text += "\nDragon lost " + damage + " health";
+                        textBox1.Text += "\nDragon lost " + damage + " health points";
                         enemydamaged();
                         if (enemyhealth == 0)
                         {
                             page = 4.2;
-                            label1.Text = "You won!\nNothing stands between you and the door now.\n What are you going to do?";
+                            textBox1.Text = "                                                              \nYou killed the dragon. Now the path is clear.\nWhat are you going to do?";
                             button1.Text = "Enter the tiny door.";
                             button2.Text = "Search dragon's body.";
                             button3.Text = "Check if the door you entered is closed.";
@@ -240,31 +240,31 @@ namespace Dungeon1
                     }
                     break;
                 case 4.2:
-                    label1.Text += "\nThe door is closed.";
+                    textBox1.Text += "\nThe door is closed.";
                     break;
                 case 4.3:
-                    label1.Text += "\nThe door is closed.";
+                    textBox1.Text += "\nThe door is closed.";
                     break;
                 case 4.4:
-                    MessageBox.Show("You got out and won!");
+                    MessageBox.Show("Congratulations! You have escaped!");
                     System.Windows.Forms.Application.Exit();
                     break;
                 case 4:
                     damage = rnd();
-                    label1.Text += "\nYou attack dragon";
+                    textBox1.Text += "\nYou attack dragon";
                     if (item1 == 1 || (item2 == 1) || (item3 == 1))
                     {
                         damage += 2;
-                        label1.Text += " with your sword";
+                        textBox1.Text += " with your sword";
                     }
                     else
                     {
-                        label1.Text += " with your hand";
+                        textBox1.Text += " with your hand";
                     }
                     if (enemyfocus == true)
                     {
-                        label1.Text += ", but he is ready for your hit.";
-                        label1.Text += "\nHe blocks it and strikes back.";
+                        textBox1.Text += ", but he is ready for your hit.";
+                        textBox1.Text += "\nHe blocks it and strikes back.";
                         damage -= 3;
                         if (damage < 0) { damage = 0; }
                         enemyhealth -= damage;
@@ -274,10 +274,10 @@ namespace Dungeon1
                         damage += 2;
                         if ((item1 == 3) || (item2 == 3) || (item3 == 3))
                         {
-                            label1.Text += "\nWith your armor you reduce part of the damage.";
+                            textBox1.Text += "\nYour armor reduces part of the damage.";
                             damage -= 2;
                         }
-                        label1.Text += "\nYou lost " + damage + " health";
+                        textBox1.Text += "\nYou lost " + damage + " health points";
                         health -= damage;
                         if (health < 0) { health = 0; }
                         takedamage();
@@ -290,30 +290,30 @@ namespace Dungeon1
                     break;
                 case 3.1:
                     damage = rnd();
-                    label1.Text += "\nYou attack vampire";
+                    textBox1.Text += "\nYou attack vampire";
                     if (item1 == 1 || (item2 == 1))
                     {
                         damage += 2;
-                        label1.Text += " with your sword";
+                        textBox1.Text += " with your sword";
                     }
                     else
                     {
-                        label1.Text += " with your hand";
+                        textBox1.Text += " with your hand";
                     }
                     if (enemyfocus == true)
                     {
-                        label1.Text += ", but he is ready for your hit.";
+                        textBox1.Text += ", but he is ready for your hit.";
                         if (rnd() > 3)
                         {
-                            label1.Text += "\nHe dodged it and striked back.";
+                            textBox1.Text += "\nHe dodged it and striked back.";
                             damage = rnd();
                             damage += 2;
                             if (item1 == 3 || (item2 == 3))
                             {
-                                label1.Text += "\nWYour armor reduces part of the damage.";
+                                textBox1.Text += "\nYour armor reduces part of the damage.";
                                 damage -= 2;
                             }
-                            label1.Text += "\nYou lost " + damage + " health";
+                            textBox1.Text += "\nYou lost " + damage + " health points";
                             health -= damage;
                             if (health < 0) health = 0;
                             takedamage();
@@ -321,18 +321,18 @@ namespace Dungeon1
                         }
                         else
                         {
-                            label1.Text += "\nHe didn't manage to dodge your attack.";
+                            textBox1.Text += "\nHe didn't manage to dodge your attack.";
                             enemyhealth -= damage;
                             if (enemyhealth < 0) enemyhealth = 0;
-                            label1.Text += "\nVampire lost " + damage + " health";
+                            textBox1.Text += "\nVampire lost " + damage + " health points";
                             enemydamaged();
                             if (enemyhealth == 0)
                             {
                                 page = 3.2;
-                                label1.Text = "You won!\nNothing stands between you and the chest or the door now.\n What are you going to do?";
+                                textBox1.Text = "                                                              \nYou killed the vampire. Now the path is clear.\nWhat are you going to do?";
                                 button1.Text = "Enter the door.";
                                 button2.Text = "Look inside the chest.";
-                                button3.Text = "Go back to the previous room.";
+                                button3.Text = "Return to the previous room.";
                             }
                             enemyfocus = true;
 
@@ -342,45 +342,45 @@ namespace Dungeon1
                     {
                         enemyhealth -= damage;
                         if (enemyhealth < 0) enemyhealth = 0;
-                        label1.Text += "\nVampire lost " + damage + " health";
+                        textBox1.Text += "\nVampire lost " + damage + " health points";
                         enemydamaged();
                         if (enemyhealth == 0)
                         {
                             page = 3.2;
-                            label1.Text = "You won!\nNothing stands between you and the chest or the door now.\n What are you going to do?";
+                            textBox1.Text = "                                                              \nYou won!\nNothing stands between you and the chest or the door now.\nWhat are you going to do?";
                             button1.Text = "Enter the door.";
                             button2.Text = "Look inside the chest.";
-                            button3.Text = "Go back to the previous room.";
+                            button3.Text = "Return to the previous room.";
                         }
                         enemyfocus = true;
                     }
                     break;
                 case 3:
                     damage = rnd();
-                    label1.Text += "\nYou attack vampire";
+                    textBox1.Text += "\nYou attack vampire";
                     if (item1 == 1 || (item2 == 1))
                     {
                         damage += 2;
-                        label1.Text += " with your sword";
+                        textBox1.Text += " with your sword";
                     }
                     else
                     {
-                        label1.Text += " with your hand";
+                        textBox1.Text += " with your hand";
                     }
                     if (enemyfocus == true)
                     {
-                        label1.Text += ", but he is ready for your hit.";
+                        textBox1.Text += ", but he is ready for your hit.";
                         if (rnd() > 3)
                         {
-                            label1.Text += "\nHe dodged it and striked back.";
+                            textBox1.Text += "\nHe dodged it and striked back.";
                             damage = rnd();
                             damage += 2;
                             if (item1 == 3 || (item2 == 3))
                             {
-                                label1.Text += "\nWYour armor reduces part of the damage.";
+                                textBox1.Text += "\nYour armor reduces part of the damage.";
                                 damage -= 2;
                             }
-                            label1.Text += "\nYou lost " + damage + " health";
+                            textBox1.Text += "\nYou lost " + damage + " health points";
                             health -= damage;
                             if (health < 0) health = 0;
                             takedamage();
@@ -388,10 +388,10 @@ namespace Dungeon1
                         }
                         else
                         {
-                            label1.Text += "\nHe didn't manage to dodge your attack.";
+                            textBox1.Text += "\nHe failed dodging your attack.";
                             enemyhealth -= damage;
                             if (enemyhealth < 0) enemyhealth = 0;
-                            label1.Text += "\nVampire lost " + damage + " health";
+                            textBox1.Text += "\nVampire lost " + damage + " health points";
                             enemydamaged();
                             enemyfocus = true;
 
@@ -401,7 +401,7 @@ namespace Dungeon1
                     {
                         enemyhealth -= damage;
                         if (enemyhealth < 0) enemyhealth = 0;
-                        label1.Text += "\nVampire lost " + damage + " health";
+                        textBox1.Text += "\nVampire lost " + damage + " health points";
                         enemydamaged();
                         enemyfocus = true;
                     }
@@ -411,8 +411,9 @@ namespace Dungeon1
                     page = 3.1;
                     break;
                 case 1:
-                    label1.Text = "You can see an ugly goblin, a door and a chest behind him.\nWhat are you going to do?";
+                    textBox1.Text = "                                                              \nYou bump into an ugly goblin, there is a door and a chest behind him.\nWhat are you going to do?";
                     enemyhealth = 10;
+                    label3.Visible = true;
                     pictureBox16.Image = Properties.Resources.hpbar;
                     pictureBox17.Image = Properties.Resources.hpbar;
                     pictureBox18.Image = Properties.Resources.hpbar;
@@ -424,13 +425,14 @@ namespace Dungeon1
                     pictureBox24.Image = Properties.Resources.hpbar;
                     pictureBox25.Image = Properties.Resources.hpbar;
                     button1.Text = "Attack the goblin.";
-                    button2.Text = "Try to make friend with gibin.";
-                    button3.Text = "Go back to the previous room.";
+                    button2.Text = "Try to make friends with goblin.";
+                    button3.Text = "Return to the previous room.";
                     page = 2;
                     break;
                 case 1.1:
-                    label1.Text = "You can see an ugly goblin, \n a door and a chest behind him.";
+                    textBox1.Text = "                                                              \nYou bump into an ugly goblin, there is a door and a chest behind him.\nWhat are you going to do?";
                     enemyhealth = 10;
+                    label3.Visible = true;
                     pictureBox16.Image = Properties.Resources.hpbar;
                     pictureBox17.Image = Properties.Resources.hpbar;
                     pictureBox18.Image = Properties.Resources.hpbar;
@@ -442,47 +444,48 @@ namespace Dungeon1
                     pictureBox24.Image = Properties.Resources.hpbar;
                     pictureBox25.Image = Properties.Resources.hpbar;
                     button1.Text = "Attack the goblin.";
-                    button2.Text = "Try to make friend with gibin.";
-                    button3.Text = "Go back to the previous room.";
+                    button2.Text = "Try to make friends with goblin.";
+                    button3.Text = "Return to the previous room.";
                     page = 2;
                     break;
                 case 2:
                     damage = rnd();
-                    label1.Text += "\nYou attack goblin";
+                    textBox1.Text += "\nYou attack goblin";
                     if (item1 == 1)
                     {
                         damage += 2;
-                        label1.Text += " with your sword";
+                        textBox1.Text += " with your sword";
                     }
                     else
                     {
-                        label1.Text += " with your hand";
+                        textBox1.Text += " with your hand";
                     }
                     if (enemyfocus == true)
                     {
-                        label1.Text += ", but he is ready for your hit.";
+                        textBox1.Text += ", but he is ready for your hit.";
                         if (rnd() > 3)
                         {
-                            label1.Text += "\nHe dodged it and striked back.";
+                            textBox1.Text += "\nHe dodged it and striked back.";
                             damage = rnd();
                             damage += 1;
                             if (item1 == 3)
                             {
-                                label1.Text += "\nYour armor reduce part of the damage";
+                                textBox1.Text += "\nYour armor reduce part of the damage";
                                 damage -= 2;
                             }
-                            label1.Text += "\nYou lost " + damage + " health";
+                            textBox1.Text += "\nYou lost " + damage + " health points";
                             health -= damage;
                             if (health < 0) health = 0;
                             takedamage();
                             enemyfocus = true;
+                            textBox1.Text += "\nThere is a chanse, tha enemy will dodge or block your attack.\nBut he won't expect it right after his strike.";
                         }
                         else
                         {
-                            label1.Text += "\nhe didn't manage to dodge your attack.";
+                            textBox1.Text += "\nHe failed dodging your attack.";
                             enemyhealth -= damage;
                             if (enemyhealth < 0) enemyhealth = 0;
-                            label1.Text += "\nGoblin lost " + damage + " health";
+                            textBox1.Text += "\nGoblin lost " + damage + " health points";
                             enemydamaged();
                             enemyfocus = true;
 
@@ -493,7 +496,7 @@ namespace Dungeon1
                         damage += 1;
                         enemyhealth -= damage;
                         if (enemyhealth < 0) enemyhealth = 0;
-                        label1.Text += "\nGoblin lost " + damage + " health";
+                        textBox1.Text += "\nGoblin lost " + damage + " health ponits";
                         enemydamaged();
                         enemyfocus = true;
                     }
@@ -505,22 +508,22 @@ namespace Dungeon1
 
                 case 2.1:
                     damage = rnd();
-                    label1.Text += "\nYou attack goblin";
+                    textBox1.Text += "\nYou attack goblin";
                     if (item1 == 1) { damage += 2; }
                     if (enemyfocus == true)
                     {
-                        label1.Text += ",but he is ready for your hit.";
+                        textBox1.Text += ",but he is ready for your hit.";
                         if (rnd() > 4)
                         {
-                            label1.Text += "\nHe dodged it and striked back.";
+                            textBox1.Text += "\nHe dodged it and striked back.";
                             damage = rnd();
                             damage += 1;
                             if (item1 == 3)
                             {
-                                label1.Text += "\nWith your armor you reduce part of the damage";
+                                textBox1.Text += "\nYour armor reduces part of the damage";
                                 damage -= 2;
                             }
-                            label1.Text += "\n You lost " + damage + " health";
+                            textBox1.Text += "\n You lost " + damage + " health points";
                             health -= damage;
                             if (health < 0) health = 0;
                             takedamage();
@@ -528,19 +531,19 @@ namespace Dungeon1
                         }
                         else
                         {
-                            label1.Text += "\nhe didn't managed to dodge your attack.";
+                            textBox1.Text += "\nhe failed dodging your attack.";
                             enemyhealth -= damage;
                             if (enemyhealth < 0) enemyhealth = 0;
-                            label1.Text += "\nGoblin lost " + damage + " health";
+                            textBox1.Text += "\nGoblin lost " + damage + " health points";
                             enemydamaged();
                             enemyfocus = true;
                             if (enemyhealth == 0)
                             {
                                 page = 2.2;
-                                label1.Text = "You won!\nNothing stands between you and the chest or the door now.\n What are you going to do?";
+                                textBox1.Text = "                                                              \nYou killed the goblin. Now the path is clear.\nWhat are you going to do?";
                                 button1.Text = "Enter the door.";
                                 button2.Text = "Look inside the chest.";
-                                button3.Text = "Go back to the previous room.";
+                                button3.Text = "Return to the previous room.";
                             }
 
                         }
@@ -550,32 +553,32 @@ namespace Dungeon1
                         damage += 1;
                         enemyhealth -= damage;
                         if (enemyhealth < 0) enemyhealth = 0;
-                        label1.Text += "\nGoblin lost " + damage + " health";
+                        textBox1.Text += "\nGoblin lost " + damage + " health points";
                         enemydamaged();
                         if (enemyhealth == 0)
                         {
                             page = 2.2;
-                            label1.Text = "You won!\nNothing stands between you and the chest or the door now.\n What are you going to do?";
+                            textBox1.Text = "                                                              \nYou killed the goblin. Now the path is clear.\nWhat are you going to do?";
                             button1.Text = "Enter the door.";
                             button2.Text = "Look inside the chest.";
-                            button3.Text = "Go back to the previous room.";
+                            button3.Text = "Return to the previous room.";
                         }
                         enemyfocus = true;
                     }
                     break;
                 case 2.2:
-                    label1.Text = "You can see terrifying vampire and another door and chest behind him.\nWhat are you going to do?";
-                    button1.Text = "Attack blood-drinking creature";
+                    textBox1.Text = "                                                              \nYou can see a terrifying vampire and an another door and a chest behind him.\nWhat are you going to do?";
+                    button1.Text = "Attack blood-sucking creature";
                     button2.Text = "Try to sneak behind vampire.";
-                    button3.Text = "Go back to the previous room.";
+                    button3.Text = "Return to the previous room.";
                     page = 3;
                     enemyhealth = 10;
                     break;
                 case 2.3:
-                    label1.Text = "You can see terrifying vampire and another door and chest behind him.\nWhat are you going to do?";
+                    textBox1.Text = "                                                              \nYou can see a terrifying vampire and an another door and a chest behind him.\nWhat are you going to do?";
                     button1.Text = "Attack blood-drinking creature";
                     button2.Text = "Try to sneak behind vampire.";
-                    button3.Text = "Go back to the previous room.";
+                    button3.Text = "Return to the previous room.";
                     page = 3;
                     enemyhealth = 10;
                     break;
@@ -589,19 +592,19 @@ namespace Dungeon1
                 case 4:
                     if (rnd() > 3)
                     {
-                        page = 4.3; label1.Text = "\"Sure, here is a key from this door.\"\n What are you going to do?";
+                        page = 4.3; textBox1.Text = "                                                              \n\"Sure, here is a key from this door.\"\n What are you going to do?";
                         button1.Text = "Enter the door.";
                         button2.Text = "Open door with the key.";
-                        button3.Text = "Go back to the previous room.";
+                        button3.Text = "Return to the previous room.";
                     }
                     else
                     {
-                        label1.Text += "\nLooks like dragon don't understand human language.\nHe attacks you.";
+                        textBox1.Text += "\nLooks like dragon don't understand human language.\nHe attacks you.";
                         damage = rnd();
                         damage += 3;
-                        if ((item1 == 3) || (item2 == 3) || (item3 == 3)) { damage -= 2; label1.Text += "\nWith your armor you reduce part of the damage"; }
+                        if ((item1 == 3) || (item2 == 3) || (item3 == 3)) { damage -= 2; textBox1.Text += "\nYour armor reduces part of the damage"; }
                         if (damage < 0) damage = 0;
-                        label1.Text += "\nDragon damaged you for " + damage + " health points";
+                        textBox1.Text += "\nDragon damaged you for " + damage + " health points";
                         health -= damage;
                         if (health < 0) health = 0;
                         takedamage();
@@ -619,12 +622,12 @@ namespace Dungeon1
                     damage += 3;
                     if ((item1 == 2) || (item2 == 2) || (item3 == 2))
                     {
-                        label1.Text += "\nYou use your shield and block 4 points of damage";
+                        textBox1.Text += "\nYou use your shield and block 4 damage points";
                         damage -= 4;
                     }
                     else
                     {
-                        label1.Text += "\nYou block enemy attack with your hands and reduce damage by 2";
+                        textBox1.Text += "\nYou block enemy attack with your hands and reduce damage by 2";
                         damage -= 2;
                     }
                     if (damage < 0)
@@ -633,21 +636,21 @@ namespace Dungeon1
                     }
                     health -= damage;
                     if (health < 0) health = 0;
-                    label1.Text += "\nYou lost " + damage + " health.";
+                    textBox1.Text += "\nYou lost " + damage + " health points.";
                     takedamage();
                     enemyfocus = false;
                     break;
                 case 4.2:
-                    label1.Text += "\nYou found a key, looks like it opens that tiny door.";
+                    textBox1.Text += "\nYou found a key, looks like it opens that tiny door.";
                     button2.Text = "Unlock the door";
                     page = 4.3;
                     break;
                 case 4.3:
-                    label1.Text += "\nYou unlocked the door.";
+                    textBox1.Text += "\nYou unlocked the door.";
                     page = 4.4;
                     break;
                 case 4.4:
-                    label1.Text += "\nThe door is already unlocked.";
+                    textBox1.Text += "\nThe door is already unlocked.";
                     break;
                 case 3.1:
                     //block
@@ -655,12 +658,12 @@ namespace Dungeon1
                     damage += 2;
                     if ((item1 == 2) || (item2 == 2))
                     {
-                        label1.Text += "\nYou use your shield and block 4 points of damage";
+                        textBox1.Text += "\nYou use your shield and block 4 damage points";
                         damage -= 4;
                     }
                     else
                     {
-                        label1.Text += "\nYou block enemy attack with your hands and reduce damage by 2";
+                        textBox1.Text += "\nYou block enemy attack with your hands and reduce damage by 2";
                         damage -= 2;
                     }
                     if (damage < 0)
@@ -669,26 +672,26 @@ namespace Dungeon1
                     }
                     health -= damage;
                     if (health < 0) health = 0;
-                    label1.Text += "\nYou lost " + damage + " health.";
+                    textBox1.Text += "\nYou lost " + damage + " health points.";
                     takedamage();
                     enemyfocus = false;
                     break;
                 case 3:
                     if (rnd() > 3)
                     {
-                        page = 3.2; label1.Text = "Wow! This vampire blind and deaf.\nNothing stands between you and chest or door.\n What are you going to do?";
+                        page = 3.2; textBox1.Text = "                                                              \nWow! This vampire is blinder than my grandmother!\nNow the path is clear.\nWhat are you going to do?";
                         button1.Text = "Enter the door.";
                         button2.Text = "Look inside the chest.";
-                        button3.Text = "Go back to the previous room.";
+                        button3.Text = "Return to the previous room.";
                     }
                     else
                     {
-                        label1.Text += "\nVampire don't understand what are you doing and decides to attack you.";
+                        textBox1.Text += "\nVampire has spotted you and attacked.";
                         damage = rnd();
                         damage += 2;
-                        if ((item1 == 3) || (item2 == 3)) { damage -= 2; label1.Text += "\nWith your armor you reduce part of the damage"; }
+                        if ((item1 == 3) || (item2 == 3)) { damage -= 2; textBox1.Text += "\nYour armor reduces part of the damage"; }
                         if (damage < 0) damage = 0;
-                        label1.Text += "\nVampire damaged you for " + damage + " health points";
+                        textBox1.Text += "\nVampire damaged you for " + damage + " health points";
                         health -= damage;
                         if (health < 0) health = 0;
                         takedamage();
@@ -701,10 +704,10 @@ namespace Dungeon1
 
                     break;
                 case 2.3:
-                    label1.Text += "\nThis chest is empty.";
+                    textBox1.Text += "\nThis chest is empty.";
                     break;
                 case 3.3:
-                    label1.Text += "\nThis chest is empty.";
+                    textBox1.Text += "\nThis chest is empty.";
                     break;
                 case 3.2:
                     do
@@ -716,20 +719,20 @@ namespace Dungeon1
                     switch (item3)
                     {
                         case 1:
-                            pictureBox13.Image = Properties.Resources.swordtest4;
-                            label1.Text += "\nYou found a sword. You can hit with it harder.";
+                            pictureBox13.Image = Properties.Resources.sword;
+                            textBox1.Text += "\nYou found a sword. You can hit with it harder.";
                             break;
                         case 3:
-                            pictureBox13.Image = Properties.Resources.armor;
-                            label1.Text += "\nYou found an armor. Yoy take less damage in it";
+                            pictureBox13.Image = Properties.Resources.armor2;
+                            textBox1.Text += "\nYou found an armor. You take less damage in it";
                             break;
                         case 2:
-                            pictureBox13.Image = Properties.Resources.shield;
-                            label1.Text += "\nYou found a shield. You can block with it better";
+                            pictureBox13.Image = Properties.Resources.shield3;
+                            textBox1.Text += "\nYou found a shield. You can block with it better";
                             break;
                         case 4:
-                            pictureBox13.Image = Properties.Resources.boots2;
-                            label1.Text += "\nYou found boots. You move faster in it.";
+                            pictureBox13.Image = Properties.Resources.boots3;
+                            textBox1.Text += "\nYou found boots. You gain an ability to move faster using them.";
                             break;
                     }
 
@@ -744,20 +747,20 @@ namespace Dungeon1
                     switch (item2)
                     {
                         case 1:
-                            pictureBox12.Image = Properties.Resources.swordtest4;
-                            label1.Text += "\nYou found a sword. You can hit with it harder.";
+                            pictureBox12.Image = Properties.Resources.sword;
+                            textBox1.Text += "\nYou found a sword. You can hit with it harder.";
                             break;
                         case 3:
-                            pictureBox12.Image = Properties.Resources.armor;
-                            label1.Text += "\nYou found an armor. Yoy take less damage in it";
+                            pictureBox12.Image = Properties.Resources.armor2;
+                            textBox1.Text += "\nYou found an armor. You take less damage in it";
                             break;
                         case 2:
-                            pictureBox12.Image = Properties.Resources.shield;
-                            label1.Text += "\nYou found a shield. You can block with it better";
+                            pictureBox12.Image = Properties.Resources.shield3;
+                            textBox1.Text += "\nYou found a shield. You can block with it better";
                             break;
                         case 4:
-                            pictureBox12.Image = Properties.Resources.boots2;
-                            label1.Text += "\nYou found boots. You move faster in it.";
+                            pictureBox12.Image = Properties.Resources.boots3;
+                            textBox1.Text += "\nYou found boots. You gain an ability to move faster using them.";
                             break;
                     }
 
@@ -768,42 +771,42 @@ namespace Dungeon1
                     switch (item1)
                     {
                         case 1:
-                            pictureBox11.Image = Properties.Resources.swordtest4;
-                            label1.Text += "\nYou found a sword. You can hit with it harder.";
+                            pictureBox11.Image = Properties.Resources.sword;
+                            textBox1.Text += "You found a sword. You can hit with it harder.";
                             break;
                         case 3:
-                            pictureBox11.Image = Properties.Resources.armor;
-                            label1.Text += "\nYou found an armor. Yoy take less damage in it";
+                            pictureBox11.Image = Properties.Resources.armor2;
+                            textBox1.Text += "You found an armor. You take less damage in it";
                             break;
                         case 2:
-                            pictureBox11.Image = Properties.Resources.shield;
-                            label1.Text += "\nYou found a shield. You can block with it better";
+                            pictureBox11.Image = Properties.Resources.shield3;
+                            textBox1.Text += "You found a shield. You can block with it better";
                             break;
                         case 4:
-                            pictureBox11.Image = Properties.Resources.boots2;
-                            label1.Text += "\nYou found boots. You move faster in it.";
+                            pictureBox11.Image = Properties.Resources.boots3;
+                            textBox1.Text += "You found boots. You gain an ability to move faster using them.";
                             break;
                     }
                     break;
                 case 1.1:
-                    label1.Text += "\nThis chest is empty.";
+                    textBox1.Text += "\nThis chest is empty.";
                     break;
                 case 2:
                     if (rnd() > 3)
                     {
-                        page = 2.2; label1.Text = "Turned out, that goblin is friendly and his name is Piotr.\nNothing stands between you and chest or door.\n What are you going to do?";
+                        page = 2.2; textBox1.Text = "                                                              \nTurned out, that goblin is friendly and his name is Piotr.\nNow the path is clear.\nWhat are you going to do?";
                         button1.Text = "Enter the door.";
                         button2.Text = "Look inside the chest.";
-                        button3.Text = "Go back to the previous room.";
+                        button3.Text = "Return to the previous room.";
                     }
                     else
                     {
-                        label1.Text += "\nGoblin said, that he have enough friends and attacked you.";
+                        textBox1.Text += "\nGoblin said, that he has enough friends and attacked you.";
                         damage = rnd();
                         damage += 1;
-                        if (item1 == 3) { damage -= 2; label1.Text += "\nWith your armor you reduce part of the damage"; }
+                        if (item1 == 3) { damage -= 2; textBox1.Text += "\nYour armor reduces part of the damage"; }
                         if (damage < 0) damage = 0;
-                        label1.Text += "\nGoblin damaged you for " + damage + " health points";
+                        textBox1.Text += "\nGoblin damaged you for " + damage + " health points";
                         health -= damage;
                         if (health < 0) health = 0; takedamage();
                         page = 2.1;
@@ -812,13 +815,15 @@ namespace Dungeon1
                         button3.Text = "Dodge";
                         enemyfocus = true;
                     }
+                    textBox1.Text += "\nThere is a chanse, that enemy will dodge or block your attack.\nBut he won't expect it right after his strike no matter was it successfull or not.";
+
                     break;
                 case 2.1:
                     damage = rnd();
                     damage += 1;
                     if (item1 == 2)
                     {
-                        label1.Text += "\nYou use your shield and block 4 points of damage";
+                        textBox1.Text += "\nYou use your shield and block 4 damage points";
                         damage -= 4;
                         if (damage < 0)
                         {
@@ -826,7 +831,7 @@ namespace Dungeon1
                         }
                     }
                     else
-                        label1.Text += "\nYou block enemy attack with your hands and reduce damage by 2";
+                        textBox1.Text += "\nYou block enemy attack with your hands and reduce damage by 2";
                     damage -= 2;
                     if (damage < 0)
                     {
@@ -834,7 +839,7 @@ namespace Dungeon1
                     }
                     health -= damage;
                     if (health < 0) health = 0;
-                    label1.Text += "\nYou lost " + damage + " health.";
+                    textBox1.Text += "\nYou lost " + damage + " health points.";
                     takedamage();
                     enemyfocus = false;
                     break;

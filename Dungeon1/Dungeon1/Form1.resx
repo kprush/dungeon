@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>                                                              
+You have just woke up in a dungeon.
+You need to get out from here.
+You can see a chest at the corner and a door right next to it.
+What are you going to do?
+</value>
+  </data>
 </root>

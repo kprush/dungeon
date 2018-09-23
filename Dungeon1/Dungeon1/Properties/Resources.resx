@@ -118,22 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="armor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shield1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shield1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hpbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hpbar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hpbar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hpbar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="swordtest4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\swordtest4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="armor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\armor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hpbar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hpbar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="armor2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\armor2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="boots2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\boots2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="swordtest4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\swordtest4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boots3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boots3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shield3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shield3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
