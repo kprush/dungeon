@@ -169,6 +169,7 @@ namespace Dungeon1
                     button2.Text = "Ask if you can pass him and go into the door he standing infront of;";
                     button3.Text = "Check if the door you just entered is closed.";
                     enemyhealth = 10;
+                    enemydamaged();
                     break;
                 case 3.3:
                     page = 4;
@@ -177,6 +178,7 @@ namespace Dungeon1
                     button2.Text = "Ask if you can pass him and go into the door he standing infront of;";
                     button3.Text = "Check if the door you just entered is closed.";
                     enemyhealth = 10;
+                    enemydamaged();
                     break;
                 case 4.1:
                     damage = rnd();
@@ -413,6 +415,7 @@ namespace Dungeon1
                 case 1:
                     textBox1.Text = "                                                              \nYou bump into an ugly goblin, there is a door and a chest behind him.\nWhat are you going to do?";
                     enemyhealth = 10;
+                    enemydamaged();
                     label3.Visible = true;
                     pictureBox16.Image = Properties.Resources.hpbar;
                     pictureBox17.Image = Properties.Resources.hpbar;
@@ -432,6 +435,7 @@ namespace Dungeon1
                 case 1.1:
                     textBox1.Text = "                                                              \nYou bump into an ugly goblin, there is a door and a chest behind him.\nWhat are you going to do?";
                     enemyhealth = 10;
+                    enemydamaged();
                     label3.Visible = true;
                     pictureBox16.Image = Properties.Resources.hpbar;
                     pictureBox17.Image = Properties.Resources.hpbar;
@@ -488,6 +492,8 @@ namespace Dungeon1
                             textBox1.Text += "\nGoblin lost " + damage + " health points";
                             enemydamaged();
                             enemyfocus = true;
+                            textBox1.Text += "\nThere is a chanse, that enemy will dodge or block your attack.\nBut he won't expect it right after his strike no matter was it successfull or not.";
+
 
                         }
                     }
@@ -573,6 +579,7 @@ namespace Dungeon1
                     button3.Text = "Return to the previous room.";
                     page = 3;
                     enemyhealth = 10;
+                    enemydamaged();
                     break;
                 case 2.3:
                     textBox1.Text = "                                                              \nYou can see a terrifying vampire and an another door and a chest behind him.\nWhat are you going to do?";
@@ -581,6 +588,7 @@ namespace Dungeon1
                     button3.Text = "Return to the previous room.";
                     page = 3;
                     enemyhealth = 10;
+                    enemydamaged();
                     break;
             }
         }
@@ -858,6 +866,18 @@ namespace Dungeon1
         {
             switch (enemyhealth)
             {
+                case 10:
+                    pictureBox25.Image = Properties.Resources.hpbar;
+                    pictureBox24.Image = Properties.Resources.hpbar;
+                    pictureBox23.Image = Properties.Resources.hpbar;
+                    pictureBox22.Image = Properties.Resources.hpbar;
+                    pictureBox21.Image = Properties.Resources.hpbar;
+                    pictureBox20.Image = Properties.Resources.hpbar;
+                    pictureBox19.Image = Properties.Resources.hpbar;
+                    pictureBox18.Image = Properties.Resources.hpbar;
+                    pictureBox17.Image = Properties.Resources.hpbar;
+                    pictureBox16.Image = Properties.Resources.hpbar;
+                    break;
                 case 9:
                     pictureBox25.Image = Properties.Resources.hpbar2;
                     pictureBox24.Image = Properties.Resources.hpbar;

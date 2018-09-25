@@ -8,3 +8,13 @@ C:\Users\admin\source\repos\Dungeon1\Dungeon1\bin\Debug\Dungeon1.exe
 C:\Users\admin\source\repos\Dungeon1\Dungeon1\bin\Debug\Dungeon1.pdb
 C:\Users\admin\source\repos\Dungeon1\Dungeon1\obj\Debug\Dungeon1.exe
 C:\Users\admin\source\repos\Dungeon1\Dungeon1\obj\Debug\Dungeon1.pdb
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\bin\Debug\Dungeon1.exe.config
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\bin\Debug\Dungeon1.exe
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\bin\Debug\Dungeon1.pdb
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\obj\Debug\Dungeon1.csprojAssemblyReference.cache
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\obj\Debug\Dungeon1.Form1.resources
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\obj\Debug\Dungeon1.Properties.Resources.resources
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\obj\Debug\Dungeon1.csproj.GenerateResource.cache
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\obj\Debug\Dungeon1.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\obj\Debug\Dungeon1.exe
+C:\Users\admin\Downloads\dungeon\Dungeon1\Dungeon1\obj\Debug\Dungeon1.pdb
